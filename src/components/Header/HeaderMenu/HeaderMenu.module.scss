@@ -1,0 +1,36 @@
+.headerMenuContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userOptionContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.headerMenuAvatar {
+  background-color: #1BA9A0;
+}
+
+.headerMenuInfoText {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+
+.headerMenuSettingIcon {
+  color: #1BA9A0;
+}
+
+.headerMenuInfoUserName {
+  align-self: flex-end;
+  color: #1BA9A0;
+}

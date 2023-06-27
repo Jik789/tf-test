@@ -1,0 +1,88 @@
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+}
+
+.itemMainInfo {
+  display: flex;
+}
+
+.itemLogo {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.orgInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemNameAdress {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.itemName {
+  font-weight: 700;
+}
+
+.itemAdress {
+  color: #A4A5A6;
+}
+
+.itemTagList {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.itemTagInfo {
+  color: #00A3FF;
+  width: 100%;
+  font-weight: 700;
+  background-color: #c8eafd;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.itemSkillList {
+  display: flex;
+  gap: 10px;
+}
+
+.itemSkillInfo {
+  color: #A4A5A6;
+}
+
+.buttonCard {
+  background-color: #F0623C;
+  padding: 12px 24px 12px 24px;
+  width: 165px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.goBackButton {
+  display: block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.goBackButton:hover {
+  background-color: #555;
+}
