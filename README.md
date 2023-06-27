@@ -2,7 +2,7 @@
 
 ## Description
 
-Ссылка на деплой приложения: 
+Ссылка на деплой приложения: https://tf-test-jik.netlify.app/
 
 #### Technical Stack
 
