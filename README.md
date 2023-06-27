@@ -8,6 +8,7 @@
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org)
+- [Redux](https://redux-toolkit.js.org/)
 
 #### Additional tools
 
