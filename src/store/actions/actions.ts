@@ -10,10 +10,5 @@ export const fetchAllItems = createAsyncThunk('items/fetchAllitems', async () =>
 });
 
 export const fetchItem = createAsyncThunk('items/fetchitem', async (id: string | null) => {
-  console.log(id);
-  try {
-    return await fetch(`https://fakestoreapi.com/products/${id}`).then((res) => res.json());
-  } catch (error) {
-    return new Error();
-  }
+  return await fetch(`https://fakestoreapi.com/products/${id}`).then((res) => res.json());
 });

@@ -21,8 +21,8 @@ function CardItem({ item, inList }: IRepoItemProps) {
         </div>
         <ul className={styles.itemTagList}>
           {/* //Вот тут по хорошему должен быть цикл с отрисовкой тегов, но в тестовом это не целесообразно */}
-          <li className={styles.itemTagInfo}>IT</li>
-          <li className={styles.itemTagInfo}>Образование</li>
+          <li className={styles.itemTagInfoGroupOne}>IT</li>
+          <li className={styles.itemTagInfoGroupTwo}>Образование</li>
         </ul>
       </div>
       <p>{item.description}</p>
@@ -36,7 +36,7 @@ function CardItem({ item, inList }: IRepoItemProps) {
         <li className={styles.itemSkillInfo}>+5</li>
       </ul>
       {inList ? (
-        <Link className={styles.buttonCard} to={`/${item.id}`}>
+        <Link className={styles.buttonCard} to={`/item/${item.id}`}>
           Подробнее
         </Link>
       ) : (

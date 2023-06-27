@@ -20,11 +20,9 @@ export const oneItemSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchItem.pending, (state) => {
-      console.log('pending');
       state.loading = true;
     });
     builder.addCase(fetchItem.fulfilled, (state, action) => {
-      console.log(action.payload);
       state.item = action.payload;
       state.loading = false;
     });

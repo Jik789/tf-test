@@ -43,13 +43,22 @@
   margin-left: auto;
 }
 
-.itemTagInfo {
+.itemTagInfoGroupOne {
   color: #00A3FF;
   width: 100%;
   font-weight: 700;
   background-color: #c8eafd;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.itemTagInfoGroupTwo {
+  color: #e100ff;
+  width: 100%;
+  font-weight: 700;
+  background-color: #f8c6ff;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .itemSkillList {

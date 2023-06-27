@@ -5,6 +5,7 @@ import styles from './CardPage.module.scss';
 import CardItem from '../../components/CardItem/CardItem';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { fetchItem } from '../../store/actions/actions';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
 
 const CardPage = () => {
   const { item } = useParams();
@@ -19,9 +20,15 @@ const CardPage = () => {
   }, [dispatch, item]);
 
   return (
-    <div className={styles.card}>
-      {element.item ? <CardItem item={element.item} inList={false} /> : <Loader />}
-    </div>
+    <>
+      {element.error ? (
+        <NotFoundPage />
+      ) : (
+        <div className={styles.card}>
+          {element.item ? <CardItem item={element.item} inList={false} /> : <Loader />}
+        </div>
+      )}
+    </>
   );
 };
 
